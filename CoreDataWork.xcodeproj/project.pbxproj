@@ -14,6 +14,10 @@
 		2ECD4E212A08FA9600E942C3 /* CoreDataWork.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD4E1F2A08FA9600E942C3 /* CoreDataWork.xcdatamodeld */; };
 		2ECD4E232A08FA9900E942C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ECD4E222A08FA9900E942C3 /* Assets.xcassets */; };
 		2ECD4E262A08FA9900E942C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ECD4E242A08FA9900E942C3 /* LaunchScreen.storyboard */; };
+		2ECD4E302A092FA600E942C3 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD4E2E2A092FA600E942C3 /* Category+CoreDataClass.swift */; };
+		2ECD4E312A092FA600E942C3 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD4E2F2A092FA600E942C3 /* Category+CoreDataProperties.swift */; };
+		2ECD4E342A092FE800E942C3 /* CDCategoryMDL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD4E332A092FE800E942C3 /* CDCategoryMDL.swift */; };
+		2ECD4E362A09307600E942C3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD4E352A09307600E942C3 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		2ECD4E222A08FA9900E942C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ECD4E252A08FA9900E942C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ECD4E272A08FA9900E942C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ECD4E2E2A092FA600E942C3 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2ECD4E2F2A092FA600E942C3 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2ECD4E332A092FE800E942C3 /* CDCategoryMDL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDCategoryMDL.swift; sourceTree = "<group>"; };
+		2ECD4E352A09307600E942C3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		2ECD4E152A08FA9600E942C3 /* CoreDataWork */ = {
 			isa = PBXGroup;
 			children = (
+				2ECD4E2D2A092F4B00E942C3 /* Database */,
 				2ECD4E162A08FA9600E942C3 /* AppDelegate.swift */,
 				2ECD4E182A08FA9600E942C3 /* SceneDelegate.swift */,
 				2ECD4E1A2A08FA9600E942C3 /* ViewController.swift */,
@@ -65,9 +74,28 @@
 				2ECD4E222A08FA9900E942C3 /* Assets.xcassets */,
 				2ECD4E242A08FA9900E942C3 /* LaunchScreen.storyboard */,
 				2ECD4E272A08FA9900E942C3 /* Info.plist */,
-				2ECD4E1F2A08FA9600E942C3 /* CoreDataWork.xcdatamodeld */,
 			);
 			path = CoreDataWork;
+			sourceTree = "<group>";
+		};
+		2ECD4E2D2A092F4B00E942C3 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				2ECD4E2E2A092FA600E942C3 /* Category+CoreDataClass.swift */,
+				2ECD4E2F2A092FA600E942C3 /* Category+CoreDataProperties.swift */,
+				2ECD4E322A092FC100E942C3 /* CoreDataModel */,
+				2ECD4E1F2A08FA9600E942C3 /* CoreDataWork.xcdatamodeld */,
+				2ECD4E352A09307600E942C3 /* CoreDataManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		2ECD4E322A092FC100E942C3 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				2ECD4E332A092FE800E942C3 /* CDCategoryMDL.swift */,
+			);
+			path = CoreDataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +170,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ECD4E1B2A08FA9600E942C3 /* ViewController.swift in Sources */,
+				2ECD4E312A092FA600E942C3 /* Category+CoreDataProperties.swift in Sources */,
 				2ECD4E172A08FA9600E942C3 /* AppDelegate.swift in Sources */,
 				2ECD4E192A08FA9600E942C3 /* SceneDelegate.swift in Sources */,
+				2ECD4E342A092FE800E942C3 /* CDCategoryMDL.swift in Sources */,
+				2ECD4E302A092FA600E942C3 /* Category+CoreDataClass.swift in Sources */,
+				2ECD4E362A09307600E942C3 /* CoreDataManager.swift in Sources */,
 				2ECD4E212A08FA9600E942C3 /* CoreDataWork.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
