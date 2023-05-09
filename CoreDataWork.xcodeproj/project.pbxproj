@@ -10,8 +10,11 @@
 		2E3160942A0A41C500338FEB /* addNewTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3160932A0A41C500338FEB /* addNewTVC.swift */; };
 		2E3160962A0A41DE00338FEB /* categoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3160952A0A41DE00338FEB /* categoryTVC.swift */; };
 		2E31609A2A0A42B700338FEB /* ManageCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3160992A0A42B700338FEB /* ManageCategoryVC.swift */; };
-		2E31609D2A0A487C00338FEB /* CDCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E31609B2A0A487C00338FEB /* CDCategory+CoreDataClass.swift */; };
-		2E31609E2A0A487C00338FEB /* CDCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E31609C2A0A487C00338FEB /* CDCategory+CoreDataProperties.swift */; };
+		2E3160A42A0A4FB300338FEB /* CDCategoryListMDL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3160A32A0A4FB300338FEB /* CDCategoryListMDL.swift */; };
+		2E3160A72A0A507000338FEB /* CDCategoryList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3160A52A0A507000338FEB /* CDCategoryList+CoreDataClass.swift */; };
+		2E3160A82A0A507000338FEB /* CDCategoryList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3160A62A0A507000338FEB /* CDCategoryList+CoreDataProperties.swift */; };
+		2E3160AB2A0A551600338FEB /* CDCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3160A92A0A551600338FEB /* CDCategory+CoreDataClass.swift */; };
+		2E3160AC2A0A551600338FEB /* CDCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3160AA2A0A551600338FEB /* CDCategory+CoreDataProperties.swift */; };
 		2ECD4E172A08FA9600E942C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD4E162A08FA9600E942C3 /* AppDelegate.swift */; };
 		2ECD4E192A08FA9600E942C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD4E182A08FA9600E942C3 /* SceneDelegate.swift */; };
 		2ECD4E1B2A08FA9600E942C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD4E1A2A08FA9600E942C3 /* ViewController.swift */; };
@@ -29,8 +32,11 @@
 		2E3160932A0A41C500338FEB /* addNewTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNewTVC.swift; sourceTree = "<group>"; };
 		2E3160952A0A41DE00338FEB /* categoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryTVC.swift; sourceTree = "<group>"; };
 		2E3160992A0A42B700338FEB /* ManageCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageCategoryVC.swift; sourceTree = "<group>"; };
-		2E31609B2A0A487C00338FEB /* CDCategory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
-		2E31609C2A0A487C00338FEB /* CDCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2E3160A32A0A4FB300338FEB /* CDCategoryListMDL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDCategoryListMDL.swift; sourceTree = "<group>"; };
+		2E3160A52A0A507000338FEB /* CDCategoryList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategoryList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2E3160A62A0A507000338FEB /* CDCategoryList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategoryList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2E3160A92A0A551600338FEB /* CDCategory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2E3160AA2A0A551600338FEB /* CDCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2ECD4E132A08FA9600E942C3 /* CoreDataWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ECD4E162A08FA9600E942C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ECD4E182A08FA9600E942C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,8 +98,10 @@
 		2ECD4E2D2A092F4B00E942C3 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				2E31609B2A0A487C00338FEB /* CDCategory+CoreDataClass.swift */,
-				2E31609C2A0A487C00338FEB /* CDCategory+CoreDataProperties.swift */,
+				2E3160A92A0A551600338FEB /* CDCategory+CoreDataClass.swift */,
+				2E3160AA2A0A551600338FEB /* CDCategory+CoreDataProperties.swift */,
+				2E3160A52A0A507000338FEB /* CDCategoryList+CoreDataClass.swift */,
+				2E3160A62A0A507000338FEB /* CDCategoryList+CoreDataProperties.swift */,
 				2ECD4E322A092FC100E942C3 /* CoreDataModel */,
 				2ECD4E1F2A08FA9600E942C3 /* CoreDataWork.xcdatamodeld */,
 				2ECD4E352A09307600E942C3 /* CoreDataManager.swift */,
@@ -105,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				2ECD4E332A092FE800E942C3 /* CDCategoryMDL.swift */,
+				2E3160A32A0A4FB300338FEB /* CDCategoryListMDL.swift */,
 			);
 			path = CoreDataModel;
 			sourceTree = "<group>";
@@ -192,18 +201,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E3160A42A0A4FB300338FEB /* CDCategoryListMDL.swift in Sources */,
 				2ECD4E1B2A08FA9600E942C3 /* ViewController.swift in Sources */,
+				2E3160A72A0A507000338FEB /* CDCategoryList+CoreDataClass.swift in Sources */,
 				2ECD4E172A08FA9600E942C3 /* AppDelegate.swift in Sources */,
 				2E3160942A0A41C500338FEB /* addNewTVC.swift in Sources */,
 				2E3160962A0A41DE00338FEB /* categoryTVC.swift in Sources */,
 				2ECD4E192A08FA9600E942C3 /* SceneDelegate.swift in Sources */,
 				2ECD4E342A092FE800E942C3 /* CDCategoryMDL.swift in Sources */,
-				2E31609D2A0A487C00338FEB /* CDCategory+CoreDataClass.swift in Sources */,
 				2ECD4E392A094C4000E942C3 /* ToDoListVC.swift in Sources */,
 				2ECD4E362A09307600E942C3 /* CoreDataManager.swift in Sources */,
-				2E31609E2A0A487C00338FEB /* CDCategory+CoreDataProperties.swift in Sources */,
 				2ECD4E212A08FA9600E942C3 /* CoreDataWork.xcdatamodeld in Sources */,
 				2E31609A2A0A42B700338FEB /* ManageCategoryVC.swift in Sources */,
+				2E3160AB2A0A551600338FEB /* CDCategory+CoreDataClass.swift in Sources */,
+				2E3160A82A0A507000338FEB /* CDCategoryList+CoreDataProperties.swift in Sources */,
+				2E3160AC2A0A551600338FEB /* CDCategory+CoreDataProperties.swift in Sources */,
 				2ECD4E3B2A094CB400E942C3 /* categoryCVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

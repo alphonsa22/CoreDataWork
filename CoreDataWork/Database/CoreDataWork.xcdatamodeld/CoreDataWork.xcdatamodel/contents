@@ -3,5 +3,9 @@
     <entity name="CDCategory" representedClassName=".CDCategory" syncable="YES">
         <attribute name="isSelected" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="cdCateList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDCategoryList" inverseName="categories" inverseEntity="CDCategoryList"/>
+    </entity>
+    <entity name="CDCategoryList" representedClassName=".CDCategoryList" syncable="YES">
+        <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDCategory" inverseName="cdCateList" inverseEntity="CDCategory"/>
     </entity>
 </model>
