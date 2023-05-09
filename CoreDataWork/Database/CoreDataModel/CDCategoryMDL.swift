@@ -9,4 +9,5 @@ import Foundation
 
 struct CDCategoryMDL: Codable {
     let name: String?
+    let isSelected: Bool?
 }

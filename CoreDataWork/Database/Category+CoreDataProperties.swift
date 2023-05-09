@@ -2,7 +2,7 @@
 //  Category+CoreDataProperties.swift
 //  CoreDataWork
 //
-//  Created by Alphonsa Varghese on 08/05/23.
+//  Created by Alphonsa Varghese on 09/05/23.
 //
 //
 
@@ -17,6 +17,7 @@ extension Category {
     }
 
     @NSManaged public var name: String?
+    @NSManaged public var isSelected: Bool
 
 }
 

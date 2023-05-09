@@ -2,7 +2,7 @@
 //  Category+CoreDataClass.swift
 //  CoreDataWork
 //
-//  Created by Alphonsa Varghese on 08/05/23.
+//  Created by Alphonsa Varghese on 09/05/23.
 //
 //
 
@@ -12,7 +12,4 @@ import CoreData
 
 public class Category: NSManagedObject {
 
-    func convertToCategory() -> CDCategoryMDL {
-        return CDCategoryMDL(name: self.name)
-    }
 }
