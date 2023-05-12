@@ -15,6 +15,7 @@
 		2E3160A82A0A507000338FEB /* CDCategoryList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3160A62A0A507000338FEB /* CDCategoryList+CoreDataProperties.swift */; };
 		2E3160AB2A0A551600338FEB /* CDCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3160A92A0A551600338FEB /* CDCategory+CoreDataClass.swift */; };
 		2E3160AC2A0A551600338FEB /* CDCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3160AA2A0A551600338FEB /* CDCategory+CoreDataProperties.swift */; };
+		2E3160AF2A0E13E300338FEB /* categoryCoreDataCRED.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3160AE2A0E13E300338FEB /* categoryCoreDataCRED.swift */; };
 		2ECD4E172A08FA9600E942C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD4E162A08FA9600E942C3 /* AppDelegate.swift */; };
 		2ECD4E192A08FA9600E942C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD4E182A08FA9600E942C3 /* SceneDelegate.swift */; };
 		2ECD4E1B2A08FA9600E942C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD4E1A2A08FA9600E942C3 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 		2E3160A62A0A507000338FEB /* CDCategoryList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategoryList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2E3160A92A0A551600338FEB /* CDCategory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2E3160AA2A0A551600338FEB /* CDCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2E3160AE2A0E13E300338FEB /* categoryCoreDataCRED.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryCoreDataCRED.swift; sourceTree = "<group>"; };
 		2ECD4E132A08FA9600E942C3 /* CoreDataWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ECD4E162A08FA9600E942C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ECD4E182A08FA9600E942C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E3160AD2A0A6E6300338FEB /* CoreDataCommonCRED */ = {
+			isa = PBXGroup;
+			children = (
+				2E3160AE2A0E13E300338FEB /* categoryCoreDataCRED.swift */,
+			);
+			path = CoreDataCommonCRED;
+			sourceTree = "<group>";
+		};
 		2ECD4E0A2A08FA9600E942C3 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 		2ECD4E152A08FA9600E942C3 /* CoreDataWork */ = {
 			isa = PBXGroup;
 			children = (
+				2E3160AD2A0A6E6300338FEB /* CoreDataCommonCRED */,
 				2ECD4E372A094C0900E942C3 /* Controllers */,
 				2ECD4E2D2A092F4B00E942C3 /* Database */,
 				2ECD4E162A08FA9600E942C3 /* AppDelegate.swift */,
@@ -204,6 +215,7 @@
 				2E3160A42A0A4FB300338FEB /* CDCategoryListMDL.swift in Sources */,
 				2ECD4E1B2A08FA9600E942C3 /* ViewController.swift in Sources */,
 				2E3160A72A0A507000338FEB /* CDCategoryList+CoreDataClass.swift in Sources */,
+				2E3160AF2A0E13E300338FEB /* categoryCoreDataCRED.swift in Sources */,
 				2ECD4E172A08FA9600E942C3 /* AppDelegate.swift in Sources */,
 				2E3160942A0A41C500338FEB /* addNewTVC.swift in Sources */,
 				2E3160962A0A41DE00338FEB /* categoryTVC.swift in Sources */,

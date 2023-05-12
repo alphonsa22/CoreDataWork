@@ -13,7 +13,7 @@ class ToDoListVC: UIViewController {
     // MARK: - Outlets
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
-    
+//    var CategoryCoreDataCredObj = CategoryCoreDataCred()
     var CDCategoryMDLArry = [CDCategoryMDL]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,63 +40,28 @@ class ToDoListVC: UIViewController {
     
     func getCategoryList() {
         
-        let records = CoreDataManager.shared.fetchManagedObject(managedObject: CDCategoryList.self)
-        guard records != nil && records?.count != 0 else {
-            print("no category record found.")
-            self.addCategory()
-            return
-        }
-        
-        records!.forEach { item in
-            
-            let categoryItem = item.convertToCategoryList()
-            print("category items = ", categoryItem.categories ?? [])
-            
-            self.CDCategoryMDLArry = categoryItem.categories ?? []
-        }
-        
-        DispatchQueue.main.async {
-            self.categoryCollectionView.reloadData()
-        }
-    }
-
-    func addCategory() {
-        
-        let defaultCategory = ["All","Work","Personal","Birthday","Wishlist"]
-        var cdCategoryArry = [CDCategoryMDL]()
-        defaultCategory.forEach { item in
-            if item == "All" {
-                cdCategoryArry.append(CDCategoryMDL(name: item, isSelected: true))
-            } else {
-                cdCategoryArry.append(CDCategoryMDL(name: item, isSelected: false))
-            }
-        }
-        let context = CoreDataManager.shared.persistentContainer.viewContext
-        
-        CoreDataManager.shared.persistentContainer.performBackgroundTask { newContext in
-            
-            var categoryList = CDCategoryList(context: context)
-            categoryList.categories = []
-            cdCategoryArry.forEach { item in
-                let perCategory = CDCategory(context: context)
-                perCategory.name = item.name
-                perCategory.isSelected = item.name == "All" ? true : false
-                perCategory.cdCateList = categoryList
-
-            }
-            
-            do {
-                if(context.hasChanges) {
-                    try? context.save()
-                    try context.parent?.save()
-                    self.getCategoryList()
+        CategoryCoreDataCred.shared.getCategoryList { status, catArry in
+            if status {
+                DispatchQueue.main.async {
+                    self.CDCategoryMDLArry = catArry
+                    self.categoryCollectionView.reloadData()
                 }
-            } catch let error {
-                print("Failed To Save:",error)
+            } else {
+                let defaultCategory = ["All","Work","Personal","Birthday","Wishlist"]
+                
+                CategoryCoreDataCred.shared.addCategory(catArry: defaultCategory) { status, catArry  in
+                    
+                    if status {
+                        DispatchQueue.main.async {
+                            self.CDCategoryMDLArry = catArry
+                            self.categoryCollectionView.reloadData()
+                        }
+                    } else {
+                        print("unable to add the category")
+                    }
+                }
             }
-            
         }
-        
     }
 }
 
