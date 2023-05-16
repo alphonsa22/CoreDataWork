@@ -18,9 +18,9 @@ class CategoryCoreDataCred: NSObject {
         var cdCategoryArry = [CDCategoryMDL]()
         catArry.forEach { item in
             if item == "All" {
-                cdCategoryArry.append(CDCategoryMDL(name: item, isSelected: true))
+                cdCategoryArry.append(CDCategoryMDL(name: item, isSelected: true, catColor: "a2d2ff"))
             } else {
-                cdCategoryArry.append(CDCategoryMDL(name: item, isSelected: false))
+                cdCategoryArry.append(CDCategoryMDL(name: item, isSelected: false, catColor: "a2d2ff"))
             }
         }
         let context = CoreDataManager.shared.persistentContainer.viewContext

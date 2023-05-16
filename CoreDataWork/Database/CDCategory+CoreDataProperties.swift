@@ -19,6 +19,7 @@ extension CDCategory {
     @NSManaged public var name: String?
     @NSManaged public var isSelected: Bool
     @NSManaged public var cdCateList: CDCategoryList?
+    @NSManaged public var catColor: String?
 
 }
 

@@ -29,6 +29,9 @@ class ManageCategoryVC: UIViewController {
         tblCategoryList.dataSource = self
     }
 
+    func addCategory() {
+        
+    }
 }
 
 extension ManageCategoryVC: UITableViewDelegate, UITableViewDataSource {

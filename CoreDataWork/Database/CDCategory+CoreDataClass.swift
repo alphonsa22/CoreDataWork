@@ -12,6 +12,6 @@ import CoreData
 
 public class CDCategory: NSManagedObject {
     func convertToCategory() -> CDCategoryMDL {
-            return CDCategoryMDL(name: self.name, isSelected: self.isSelected)
+        return CDCategoryMDL(name: self.name, isSelected: self.isSelected, catColor: self.catColor)
         }
 }

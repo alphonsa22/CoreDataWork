@@ -27,6 +27,10 @@
 		2ECD4E362A09307600E942C3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD4E352A09307600E942C3 /* CoreDataManager.swift */; };
 		2ECD4E392A094C4000E942C3 /* ToDoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD4E382A094C4000E942C3 /* ToDoListVC.swift */; };
 		2ECD4E3B2A094CB400E942C3 /* categoryCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD4E3A2A094CB400E942C3 /* categoryCVC.swift */; };
+		2EDAD2802A134DF30030FA42 /* CDColorList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD27C2A134DF30030FA42 /* CDColorList+CoreDataClass.swift */; };
+		2EDAD2812A134DF30030FA42 /* CDColorList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD27D2A134DF30030FA42 /* CDColorList+CoreDataProperties.swift */; };
+		2EDAD2822A134DF30030FA42 /* CDCategoryColors+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD27E2A134DF30030FA42 /* CDCategoryColors+CoreDataClass.swift */; };
+		2EDAD2832A134DF30030FA42 /* CDCategoryColors+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD27F2A134DF30030FA42 /* CDCategoryColors+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		2ECD4E352A09307600E942C3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		2ECD4E382A094C4000E942C3 /* ToDoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListVC.swift; sourceTree = "<group>"; };
 		2ECD4E3A2A094CB400E942C3 /* categoryCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryCVC.swift; sourceTree = "<group>"; };
+		2EDAD27C2A134DF30030FA42 /* CDColorList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDColorList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2EDAD27D2A134DF30030FA42 /* CDColorList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDColorList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2EDAD27E2A134DF30030FA42 /* CDCategoryColors+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategoryColors+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2EDAD27F2A134DF30030FA42 /* CDCategoryColors+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategoryColors+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,10 @@
 		2ECD4E2D2A092F4B00E942C3 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				2EDAD27C2A134DF30030FA42 /* CDColorList+CoreDataClass.swift */,
+				2EDAD27D2A134DF30030FA42 /* CDColorList+CoreDataProperties.swift */,
+				2EDAD27E2A134DF30030FA42 /* CDCategoryColors+CoreDataClass.swift */,
+				2EDAD27F2A134DF30030FA42 /* CDCategoryColors+CoreDataProperties.swift */,
 				2E3160A92A0A551600338FEB /* CDCategory+CoreDataClass.swift */,
 				2E3160AA2A0A551600338FEB /* CDCategory+CoreDataProperties.swift */,
 				2E3160A52A0A507000338FEB /* CDCategoryList+CoreDataClass.swift */,
@@ -214,11 +226,14 @@
 			files = (
 				2E3160A42A0A4FB300338FEB /* CDCategoryListMDL.swift in Sources */,
 				2ECD4E1B2A08FA9600E942C3 /* ViewController.swift in Sources */,
+				2EDAD2802A134DF30030FA42 /* CDColorList+CoreDataClass.swift in Sources */,
 				2E3160A72A0A507000338FEB /* CDCategoryList+CoreDataClass.swift in Sources */,
 				2E3160AF2A0E13E300338FEB /* categoryCoreDataCRED.swift in Sources */,
 				2ECD4E172A08FA9600E942C3 /* AppDelegate.swift in Sources */,
+				2EDAD2822A134DF30030FA42 /* CDCategoryColors+CoreDataClass.swift in Sources */,
 				2E3160942A0A41C500338FEB /* addNewTVC.swift in Sources */,
 				2E3160962A0A41DE00338FEB /* categoryTVC.swift in Sources */,
+				2EDAD2812A134DF30030FA42 /* CDColorList+CoreDataProperties.swift in Sources */,
 				2ECD4E192A08FA9600E942C3 /* SceneDelegate.swift in Sources */,
 				2ECD4E342A092FE800E942C3 /* CDCategoryMDL.swift in Sources */,
 				2ECD4E392A094C4000E942C3 /* ToDoListVC.swift in Sources */,
@@ -227,6 +242,7 @@
 				2E31609A2A0A42B700338FEB /* ManageCategoryVC.swift in Sources */,
 				2E3160AB2A0A551600338FEB /* CDCategory+CoreDataClass.swift in Sources */,
 				2E3160A82A0A507000338FEB /* CDCategoryList+CoreDataProperties.swift in Sources */,
+				2EDAD2832A134DF30030FA42 /* CDCategoryColors+CoreDataProperties.swift in Sources */,
 				2E3160AC2A0A551600338FEB /* CDCategory+CoreDataProperties.swift in Sources */,
 				2ECD4E3B2A094CB400E942C3 /* categoryCVC.swift in Sources */,
 			);

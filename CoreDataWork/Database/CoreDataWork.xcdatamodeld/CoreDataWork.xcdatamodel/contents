@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="CDCategory" representedClassName=".CDCategory" syncable="YES">
+        <attribute name="catColor" optional="YES" attributeType="String"/>
         <attribute name="isSelected" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <relationship name="cdCateList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDCategoryList" inverseName="categories" inverseEntity="CDCategoryList"/>
     </entity>
+    <entity name="CDCategoryColors" representedClassName=".CDCategoryColors" syncable="YES">
+        <attribute name="catColor" optional="YES" attributeType="String"/>
+        <relationship name="cdColorList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDColorList" inverseName="catColors" inverseEntity="CDColorList"/>
+    </entity>
     <entity name="CDCategoryList" representedClassName=".CDCategoryList" syncable="YES">
         <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDCategory" inverseName="cdCateList" inverseEntity="CDCategory"/>
+    </entity>
+    <entity name="CDColorList" representedClassName=".CDColorList" syncable="YES">
+        <relationship name="catColors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDCategoryColors" inverseName="cdColorList" inverseEntity="CDCategoryColors"/>
     </entity>
 </model>
