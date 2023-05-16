@@ -9,6 +9,7 @@ import UIKit
 
 class addNewTVC: UITableViewCell {
 
+    @IBOutlet weak var btnCreateNewCategory: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -15,10 +15,13 @@ class ManageCategoryVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setUp()
     }
     
-
+    @IBAction func btnAddNewCategoryAct(_ sender: UIButton) {
+        print("add new clicked")
+    }
+    
     // MARK: - Functions
 
     func setUp() {
@@ -50,6 +53,7 @@ extension ManageCategoryVC: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "categoryTVC", for: indexPath) as? categoryTVC else {
                 return UITableViewCell()
             }
+            cell.lblCatName.text = "All Category"
             return cell
                 
         } else {
@@ -57,10 +61,23 @@ extension ManageCategoryVC: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "addNewTVC", for: indexPath) as? addNewTVC else {
                 return UITableViewCell()
             }
-            
+            cell.btnCreateNewCategory.tag = indexPath.row
             return cell
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+            print("indexpath = ", indexPath.row)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0 {
+            return 55
+        } else {
+            return 60
+        }
+    }
     
 }

@@ -9,6 +9,10 @@ import UIKit
 
 class categoryTVC: UITableViewCell {
 
+    @IBOutlet weak var viewCategoryTag: UIView!
+    @IBOutlet weak var lblCatName: UILabel!
+    
+    @IBOutlet weak var viewMore: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
