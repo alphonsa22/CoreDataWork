@@ -13,6 +13,9 @@ class ManageCategoryVC: UIViewController {
     
     @IBOutlet weak var tblCategoryList: UITableView!
     
+    // MARK: - Variables
+    var CDCategoryMDLArry = [CDCategoryMDL]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
@@ -43,7 +46,7 @@ extension ManageCategoryVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
         if section == 0 {
-            return 4
+            return CDCategoryMDLArry.count
         } else {
             return 1
         }
@@ -56,7 +59,9 @@ extension ManageCategoryVC: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "categoryTVC", for: indexPath) as? categoryTVC else {
                 return UITableViewCell()
             }
-            cell.lblCatName.text = "All Category"
+            cell.lblCatName.text = CDCategoryMDLArry[indexPath.row].name
+            cell.viewCategoryTag.backgroundColor = UIColor.init(hexString: "#\(CDCategoryMDLArry[indexPath.row].catColor ?? "#a9d2ff")")
+            cell.viewCategoryTag.layer.cornerRadius = cell.viewCategoryTag.frame.height / 2
             return cell
                 
         } else {

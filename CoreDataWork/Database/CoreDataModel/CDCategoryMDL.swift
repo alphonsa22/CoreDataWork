@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct CDCategoryMDL: Codable {
+struct CDCategoryMDL: Codable, Identifiable {
+    var id: Int?
     let name: String?
     let isSelected: Bool?
     let catColor: String?

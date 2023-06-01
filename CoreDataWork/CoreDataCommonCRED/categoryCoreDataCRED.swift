@@ -33,6 +33,7 @@ class CategoryCoreDataCred: NSObject {
                 let perCategory = CDCategory(context: context)
                 perCategory.name = item.name
                 perCategory.isSelected = item.name == "All" ? true : false
+                perCategory.catColor = item.catColor
                 perCategory.cdCateList = categoryList
 
             }

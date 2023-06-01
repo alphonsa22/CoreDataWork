@@ -25,6 +25,7 @@ class ToDoListVC: UIViewController {
     
     @IBAction func btnManageCategoryAct(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ManageCategoryVC") as! ManageCategoryVC
+        vc.CDCategoryMDLArry = CDCategoryMDLArry
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
