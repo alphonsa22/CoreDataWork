@@ -32,6 +32,7 @@
 		2EDAD2822A134DF30030FA42 /* CDCategoryColors+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD27E2A134DF30030FA42 /* CDCategoryColors+CoreDataClass.swift */; };
 		2EDAD2832A134DF30030FA42 /* CDCategoryColors+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD27F2A134DF30030FA42 /* CDCategoryColors+CoreDataProperties.swift */; };
 		2EDAD3072A286CA20030FA42 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD3062A286CA20030FA42 /* Extension.swift */; };
+		2EDAD30B2A287F620030FA42 /* AddNewCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD30A2A287F620030FA42 /* AddNewCategoryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		2EDAD27E2A134DF30030FA42 /* CDCategoryColors+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategoryColors+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2EDAD27F2A134DF30030FA42 /* CDCategoryColors+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategoryColors+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2EDAD3062A286CA20030FA42 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		2EDAD30A2A287F620030FA42 /* AddNewCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCategoryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				2E3160932A0A41C500338FEB /* addNewTVC.swift */,
 				2E3160952A0A41DE00338FEB /* categoryTVC.swift */,
 				2E3160992A0A42B700338FEB /* ManageCategoryVC.swift */,
+				2EDAD30A2A287F620030FA42 /* AddNewCategoryVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				2EDAD2822A134DF30030FA42 /* CDCategoryColors+CoreDataClass.swift in Sources */,
 				2E3160942A0A41C500338FEB /* addNewTVC.swift in Sources */,
 				2E3160962A0A41DE00338FEB /* categoryTVC.swift in Sources */,
+				2EDAD30B2A287F620030FA42 /* AddNewCategoryVC.swift in Sources */,
 				2EDAD2812A134DF30030FA42 /* CDColorList+CoreDataProperties.swift in Sources */,
 				2ECD4E192A08FA9600E942C3 /* SceneDelegate.swift in Sources */,
 				2ECD4E342A092FE800E942C3 /* CDCategoryMDL.swift in Sources */,

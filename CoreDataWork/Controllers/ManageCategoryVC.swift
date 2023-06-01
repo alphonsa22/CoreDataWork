@@ -23,6 +23,11 @@ class ManageCategoryVC: UIViewController {
     
     @IBAction func btnAddNewCategoryAct(_ sender: UIButton) {
         print("add new clicked")
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "AddNewCategoryVC") as? AddNewCategoryVC else {
+            return
+        }
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
     }
     
     // MARK: - Functions
@@ -60,7 +65,7 @@ extension ManageCategoryVC: UITableViewDelegate, UITableViewDataSource {
                 return UITableViewCell()
             }
             cell.lblCatName.text = CDCategoryMDLArry[indexPath.row].name
-            cell.viewCategoryTag.backgroundColor = UIColor.init(hexString: "#\(CDCategoryMDLArry[indexPath.row].catColor ?? "#a9d2ff")")
+            cell.viewCategoryTag.backgroundColor = UIColor.init(hexString: "#\(CDCategoryMDLArry[indexPath.row].catColor ?? "#a2d2ff")")
             cell.viewCategoryTag.layer.cornerRadius = cell.viewCategoryTag.frame.height / 2
             return cell
                 
@@ -77,6 +82,8 @@ extension ManageCategoryVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
             print("indexpath = ", indexPath.row)
+        } else {
+         
         }
     }
     
