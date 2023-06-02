@@ -33,6 +33,7 @@
 		2EDAD2832A134DF30030FA42 /* CDCategoryColors+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD27F2A134DF30030FA42 /* CDCategoryColors+CoreDataProperties.swift */; };
 		2EDAD3072A286CA20030FA42 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD3062A286CA20030FA42 /* Extension.swift */; };
 		2EDAD30B2A287F620030FA42 /* AddNewCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD30A2A287F620030FA42 /* AddNewCategoryVC.swift */; };
+		2EDAD30D2A2885E20030FA42 /* CategoryColorCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD30C2A2885E20030FA42 /* CategoryColorCVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		2EDAD27F2A134DF30030FA42 /* CDCategoryColors+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategoryColors+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2EDAD3062A286CA20030FA42 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		2EDAD30A2A287F620030FA42 /* AddNewCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCategoryVC.swift; sourceTree = "<group>"; };
+		2EDAD30C2A2885E20030FA42 /* CategoryColorCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryColorCVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				2E3160952A0A41DE00338FEB /* categoryTVC.swift */,
 				2E3160992A0A42B700338FEB /* ManageCategoryVC.swift */,
 				2EDAD30A2A287F620030FA42 /* AddNewCategoryVC.swift */,
+				2EDAD30C2A2885E20030FA42 /* CategoryColorCVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				2ECD4E212A08FA9600E942C3 /* CoreDataWork.xcdatamodeld in Sources */,
 				2EDAD3072A286CA20030FA42 /* Extension.swift in Sources */,
 				2E31609A2A0A42B700338FEB /* ManageCategoryVC.swift in Sources */,
+				2EDAD30D2A2885E20030FA42 /* CategoryColorCVC.swift in Sources */,
 				2E3160AB2A0A551600338FEB /* CDCategory+CoreDataClass.swift in Sources */,
 				2E3160A82A0A507000338FEB /* CDCategoryList+CoreDataProperties.swift in Sources */,
 				2EDAD2832A134DF30030FA42 /* CDCategoryColors+CoreDataProperties.swift in Sources */,
